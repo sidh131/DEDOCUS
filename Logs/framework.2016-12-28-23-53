@@ -1,0 +1,5 @@
+2016-12-28 23:53:12 INFO  script_CaseCreation:40 - Started execution of test case TC_01_1.0
+2016-12-28 23:53:32 INFO  script_CaseCreation:45 - Entered Login Details
+2016-12-28 23:53:47 INFO  script_CaseCreation:54 - Clicked Person Search
+2016-12-28 23:53:52 INFO  script_CaseCreation:61 - Entered Search criteria and performed Search
+2016-12-28 23:53:53 INFO  script_CaseCreation:80 - Entered Search criteria and performed Search

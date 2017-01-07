@@ -1,0 +1,5 @@
+2017-01-03 11:53:05 INFO  script_PersonSearch:41 - Started execution of test case TC_01_1.0
+2017-01-03 11:53:28 INFO  script_PersonSearch:46 - Entered Login Details
+2017-01-03 11:53:48 INFO  script_PersonSearch:55 - Clicked All Tabs
+2017-01-03 11:53:52 INFO  script_PersonSearch:67 - Entered Search Criteria
+2017-01-03 11:53:54 INFO  script_PersonSearch:73 - Clicked Search button

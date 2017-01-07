@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="57303" started-at="2016-12-19T07:17:12Z" finished-at="2016-12-19T07:18:10Z">
+    <groups>
+      <group name="Reg">
+        <method signature="script_Search.Invalid_Search(java.util.Map)[pri:4, instance:Testscript.script_Search@75b9a77c]" name="Invalid_Search" class="Testscript.script_Search"/>
+      </group> <!-- Reg -->
+      <group name="Smk">
+        <method signature="script_Search.Invalid_Search(java.util.Map)[pri:4, instance:Testscript.script_Search@75b9a77c]" name="Invalid_Search" class="Testscript.script_Search"/>
+      </group> <!-- Smk -->
+    </groups>
+    <test name="Test" duration-ms="57303" started-at="2016-12-19T07:17:12Z" finished-at="2016-12-19T07:18:10Z">
+      <class name="Testscript.script_Search">
+        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:Testscript.script_Search@75b9a77c]" name="launchApp" is-config="true" duration-ms="22534" started-at="2016-12-19T12:47:15Z" finished-at="2016-12-19T12:47:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="Invalid_Search(java.util.Map)[pri:4, instance:Testscript.script_Search@75b9a77c]" name="Invalid_Search" duration-ms="30543" started-at="2016-12-19T12:47:38Z" data-provider="invalidSearch" finished-at="2016-12-19T12:48:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Script=InvalidSearch, Uname=qtpworld2008@gmail.com, Order=1.0, Expected=Sorry..'sdlk' does not match any product on Rediff Books., Execute=Y, TC_ID=GB_08, searchtext=sdlk, password=learn123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Invalid_Search -->
+        <test-method status="PASS" signature="cloaseApp()[pri:0, instance:Testscript.script_Search@75b9a77c]" name="cloaseApp" is-config="true" duration-ms="1196" started-at="2016-12-19T12:48:08Z" finished-at="2016-12-19T12:48:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApp -->
+      </class> <!-- Testscript.script_Search -->
+      <class name="Testscript.script_Login">
+        <test-method status="PASS" signature="create_Report()[pri:0, instance:Testscript.script_Login@6adb93a2]" name="create_Report" is-config="true" duration-ms="500" started-at="2016-12-19T12:47:12Z" finished-at="2016-12-19T12:47:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_Report -->
+      </class> <!-- Testscript.script_Login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
