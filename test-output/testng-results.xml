@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="110897" started-at="2017-01-03T10:31:29Z" finished-at="2017-01-03T10:33:20Z">
+  <suite name="Suite" duration-ms="87716" started-at="2017-02-02T18:28:17Z" finished-at="2017-02-02T18:29:44Z">
     <groups>
-      <group name="ST">
-        <method signature="script_CaseCreation.caseCreation(java.util.Map)[pri:2, instance:Testscript.script_CaseCreation@8e27724]" name="caseCreation" class="Testscript.script_CaseCreation"/>
-        <method signature="script_PersonSearch.personSearch(java.util.Map)[pri:1, instance:Testscript.script_PersonSearch@c0e7403]" name="personSearch" class="Testscript.script_PersonSearch"/>
-      </group> <!-- ST -->
+      <group name="ST1">
+        <method signature="script_DESignIn.validLogin(java.util.Map)[pri:1, instance:Testscript.script_DESignIn@3aead8a8]" name="validLogin" class="Testscript.script_DESignIn"/>
+      </group> <!-- ST1 -->
     </groups>
-    <test name="Test" duration-ms="110897" started-at="2017-01-03T10:31:29Z" finished-at="2017-01-03T10:33:20Z">
-      <class name="Testscript.script_PersonSearch">
-        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:Testscript.script_PersonSearch@c0e7403]" name="launchApp" is-config="true" duration-ms="31158" started-at="2017-01-03T16:01:33Z" finished-at="2017-01-03T16:02:04Z">
+    <test name="Test" duration-ms="87716" started-at="2017-02-02T18:28:17Z" finished-at="2017-02-02T18:29:44Z">
+      <class name="Testscript.script_Login">
+        <test-method status="PASS" signature="create_Report()[pri:0, instance:Testscript.script_Login@44be902a]" name="create_Report" is-config="true" duration-ms="688" started-at="2017-02-02T23:58:16Z" finished-at="2017-02-02T23:58:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_Report -->
+      </class> <!-- Testscript.script_Login -->
+      <class name="Testscript.script_DESignIn">
+        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:Testscript.script_DESignIn@3aead8a8]" name="launchApp" is-config="true" duration-ms="22636" started-at="2017-02-02T23:58:20Z" finished-at="2017-02-02T23:58:43Z">
           <params>
             <param index="0">
               <value>
@@ -22,28 +27,48 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="personSearch(java.util.Map)[pri:1, instance:Testscript.script_PersonSearch@c0e7403]" name="personSearch" duration-ms="74254" started-at="2017-01-03T16:02:04Z" data-provider="personSearch" finished-at="2017-01-03T16:03:19Z">
+        <test-method status="PASS" signature="validLogin(java.util.Map)[pri:1, instance:Testscript.script_DESignIn@3aead8a8]" name="validLogin" duration-ms="20189" started-at="2017-02-02T23:58:43Z" data-provider="validlogin" finished-at="2017-02-02T23:59:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Script=ValidSearch, pwd=Deloitte.1#, username=pnevill@focusst.com, PID=0000000388, DOB=, Gender=, Order=1.0, Expected=0000000388, FirstName=, Execute=Y, TC_ID=TC_02, LastName=Adam}]]>
+                <![CDATA[{Script=ValidLogin, pwd=Deloitte.1%, username=DSCYF_System_Admin@focusst.com, Order=1.0, SheetName=Sign_Keyword, exp_msg=Oscar Vaerby, Execute=Y, TC_ID=TC_02}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- personSearch -->
-        <test-method status="PASS" signature="cloaseApp()[pri:0, instance:Testscript.script_PersonSearch@c0e7403]" name="cloaseApp" is-config="true" duration-ms="1436" started-at="2017-01-03T16:03:19Z" finished-at="2017-01-03T16:03:20Z">
+        </test-method> <!-- validLogin -->
+        <test-method status="PASS" signature="cloaseApp()[pri:0, instance:Testscript.script_DESignIn@3aead8a8]" name="cloaseApp" is-config="true" duration-ms="1768" started-at="2017-02-02T23:59:03Z" finished-at="2017-02-02T23:59:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cloaseApp -->
-      </class> <!-- Testscript.script_PersonSearch -->
-      <class name="Testscript.script_Login">
-        <test-method status="PASS" signature="create_Report()[pri:0, instance:Testscript.script_Login@35622eb]" name="create_Report" is-config="true" duration-ms="643" started-at="2017-01-03T16:01:29Z" finished-at="2017-01-03T16:01:29Z">
+        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:Testscript.script_DESignIn@3aead8a8]" name="launchApp" is-config="true" duration-ms="19071" started-at="2017-02-02T23:59:05Z" finished-at="2017-02-02T23:59:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ch]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- create_Report -->
-      </class> <!-- Testscript.script_Login -->
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="validLogin(java.util.Map)[pri:1, instance:Testscript.script_DESignIn@3aead8a8]" name="validLogin" duration-ms="19787" started-at="2017-02-02T23:59:24Z" data-provider="validlogin" finished-at="2017-02-02T23:59:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Script=ValidLogin, pwd=Deloitte.1%, username=DSCYF_System_Admin@focusst.com, Order=1.0, SheetName=Sign_Keyword, exp_msg=Oscar Vaerby, Execute=Y, TC_ID=TC_03}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method status="PASS" signature="cloaseApp()[pri:0, instance:Testscript.script_DESignIn@3aead8a8]" name="cloaseApp" is-config="true" duration-ms="859" started-at="2017-02-02T23:59:43Z" finished-at="2017-02-02T23:59:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloaseApp -->
+      </class> <!-- Testscript.script_DESignIn -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

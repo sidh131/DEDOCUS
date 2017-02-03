@@ -6,7 +6,7 @@
   <groups>
   	<run>
   	 	
-  	<include name="ST"></include>
+  	<include name="ST1"></include>
 
   	</run> 
   </groups>

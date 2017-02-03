@@ -6,7 +6,7 @@
     <parameter name="browser" value="ch"/>
     <groups>
       <run>
-        <include name="ST"/>
+        <include name="ST1"/>
       </run>
     </groups>
     <classes>
@@ -15,13 +15,13 @@
           <include name="create_Report"/>
         </methods>
       </class> <!-- Testscript.script_Login -->
-      <class name="Testscript.script_PersonSearch">
+      <class name="Testscript.script_DESignIn">
         <methods>
+          <include name="validLogin" invocation-numbers="0"/>
           <include name="cloaseApp"/>
           <include name="launchApp"/>
-          <include name="personSearch" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Testscript.script_PersonSearch -->
+      </class> <!-- Testscript.script_DESignIn -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

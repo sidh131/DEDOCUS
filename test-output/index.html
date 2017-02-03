@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +101,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Testscript.script_PersonSearch" hash-for-method="personSearch({Script=ValidSearch, pwd=Deloitte.1#, username=pnevill@focusst.com, PID=0000000388, DOB=, Gender=, O...)">personSearch({Script=ValidSearch, pwd=Deloitte.1#, username=pnevill@focusst.com, PID=0000000388, DOB=, Gender=, O...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Testscript.script_DESignIn" hash-for-method="validLogin({Script=ValidLogin, pwd=Deloitte.1%, username=DSCYF_System_Admin@focusst.com, Order=1.0, SheetName=S...)">validLogin({Script=ValidLogin, pwd=Deloitte.1%, username=DSCYF_System_Admin@focusst.com, Order=1.0, SheetName=S...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Testscript.script_DESignIn" hash-for-method="validLogin({Script=ValidLogin, pwd=Deloitte.1%, username=DSCYF_System_Admin@focusst.com, Order=1.0, SheetName=S...)">validLogin({Script=ValidLogin, pwd=Deloitte.1%, username=DSCYF_System_Admin@focusst.com, Order=1.0, SheetName=S...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -119,15 +124,23 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Testscript.script_PersonSearch</span>
+              <span class="class-name">Testscript.script_DESignIn</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="personSearch({Script=ValidSearch, pwd=Deloitte.1#, username=pnevill@focusst.com, PID=0000000388, DOB=, Gender=, O...)">
-                  </a> <!-- personSearch({Script=ValidSearch, pwd=Deloitte.1#, username=pnevill@focusst.com, PID=0000000388, DOB=, Gender=, O...) -->
-                  <span class="method-name">personSearch</span>
-                  <span class="parameters">({Script=ValidSearch, pwd=Deloitte.1#, username=pnevill@focusst.com, PID=0000000388, DOB=, Gender=, Order=1.0, Expected=0000000388, FirstName=, Execute=Y, TC_ID=TC_02, LastName=Adam})</span>
+                  <a name="validLogin({Script=ValidLogin, pwd=Deloitte.1%, username=DSCYF_System_Admin@focusst.com, Order=1.0, SheetName=S...)">
+                  </a> <!-- validLogin({Script=ValidLogin, pwd=Deloitte.1%, username=DSCYF_System_Admin@focusst.com, Order=1.0, SheetName=S...) -->
+                  <span class="method-name">validLogin</span>
+                  <span class="parameters">({Script=ValidLogin, pwd=Deloitte.1%, username=DSCYF_System_Admin@focusst.com, Order=1.0, SheetName=Sign_Keyword, exp_msg=Oscar Vaerby, Execute=Y, TC_ID=TC_02})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLogin({Script=ValidLogin, pwd=Deloitte.1%, username=DSCYF_System_Admin@focusst.com, Order=1.0, SheetName=S...)">
+                  </a> <!-- validLogin({Script=ValidLogin, pwd=Deloitte.1%, username=DSCYF_System_Admin@focusst.com, Order=1.0, SheetName=S...) -->
+                  <span class="method-name">validLogin</span>
+                  <span class="parameters">({Script=ValidLogin, pwd=Deloitte.1%, username=DSCYF_System_Admin@focusst.com, Order=1.0, SheetName=Sign_Keyword, exp_msg=Oscar Vaerby, Execute=Y, TC_ID=TC_03})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -146,7 +159,7 @@
     &lt;parameter name=&quot;browser&quot; value=&quot;ch&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;ST&quot;/&gt;
+        &lt;include name=&quot;ST1&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -179,10 +192,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">ST</span>
+              <span class="test-group-name">ST1</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">personSearch</span>
+                <span class="method-in-group-name">validLogin</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -202,16 +215,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'personSearch')
-data.setCell(0, 2, 'Testscript.script_PersonSearch')
-data.setCell(0, 3, 74254);
+data.setCell(0, 1, 'validLogin')
+data.setCell(0, 2, 'Testscript.script_DESignIn')
+data.setCell(0, 3, 20189);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validLogin')
+data.setCell(1, 2, 'Testscript.script_DESignIn')
+data.setCell(1, 3, 19787);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -226,12 +243,14 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">9 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Testscript.script_PersonSearch</span>
+              <span class="ignored-class-name">Testscript.script_CaseCreation</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">caseCreation</span>
+                <br/>
                 <span class="ignored-method-name">create_Report</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -248,7 +267,16 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Testscript.script_CaseCreation</span>
+              <span class="ignored-class-name">Testscript.script_PersonSearch</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">create_Report</span>
+                <br/>
+                <span class="ignored-method-name">personSearch</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Testscript.script_DESignIn</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">create_Report</span>
                 <br/>
@@ -260,15 +288,6 @@ return data;
                 <span class="ignored-method-name">invalid_Login</span>
                 <br/>
                 <span class="ignored-method-name">valid_Login</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Testscript.script_DESignIn</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">create_Report</span>
-                <br/>
-                <span class="ignored-method-name">validLogin</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -287,18 +306,30 @@ return data;
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Testscript.script_PersonSearch</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Testscript.script_DESignIn</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApp(ch)</span>
-                <span class="method-start">4279 ms</span>
+                <span class="method-start">4094 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">personSearch({Script=ValidSearch, pwd=Deloitte.1#, username=pnevill@focusst.com, PID=0000000388, DOB=, Gender=, O...)</span>
-                <span class="method-start">35437 ms</span>
+                <span class="method-name">validLogin({Script=ValidLogin, pwd=Deloitte.1%, username=DSCYF_System_Admin@focusst.com, Order=1.0, SheetName=S...)</span>
+                <span class="method-start">26730 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">cloaseApp</span>
-                <span class="method-start">109697 ms</span>
+                <span class="method-start">46919 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(ch)</span>
+                <span class="method-start">48687 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLogin({Script=ValidLogin, pwd=Deloitte.1%, username=DSCYF_System_Admin@focusst.com, Order=1.0, SheetName=S...)</span>
+                <span class="method-start">67758 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cloaseApp</span>
+                <span class="method-start">87545 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

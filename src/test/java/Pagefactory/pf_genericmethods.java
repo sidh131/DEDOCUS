@@ -2,6 +2,8 @@ package Pagefactory;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class pf_genericmethods {
@@ -33,6 +35,21 @@ public class pf_genericmethods {
 				
 			}
 	}
+		
+		
+		
+	}
+	
+	public void keyWords(String Key, WebDriver driver){
+		
+		switch (Key){
+		
+		case "EnterText":
+			
+		
+		
+		}
+		
 	}
 	
 	

@@ -33,7 +33,7 @@ public class Base {
 	public String browser_type;
 	public Utility ut;
 	
-	@BeforeSuite(groups={"Smk","UAT","Reg","ST"})
+	@BeforeSuite(groups={"Smk","UAT","Reg","ST","ST1"})
 	public void create_Report(){
 		
 		extentReports = new ExtentReports("C:\\DecFramework\\Report\\DEFOCUS_"+get_datetimestamp() +".html",false);
@@ -41,7 +41,7 @@ public class Base {
 	}
 	
 	@Parameters({"browser"})
-	@BeforeMethod(groups={"Smk","UAT","Reg","ST"})
+	@BeforeMethod(groups={"Smk","UAT","Reg","ST","ST1"})
 	public void launchApp(String btype) throws Exception{
 		browser_type=btype;
 		if(btype.equals("ff")){
@@ -59,12 +59,12 @@ public class Base {
 //		fd= new FirefoxDriver();
 		fd.get(Utility.getval(Utility.getval("env")));
 		fd.manage().window().maximize();
-		fd.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+		fd.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		
 	}
 	
 	
-	@AfterMethod(groups={"Smk","UAT","Reg", "ST"})
+	@AfterMethod(groups={"Smk","UAT","Reg", "ST","ST1"})
 	public void cloaseApp() throws Exception{	
 		
 		fd.close();
